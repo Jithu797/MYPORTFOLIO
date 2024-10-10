@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="shortcut icon" href="assets/img/logo.jpg" style="border-radius: 50px;" type="image/x-icon">
+
+    <title>Responsive Portfolio Website</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Jithendra</a>
+            <div id="nav-menu" class="nav__menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link"><i class="uil uil-estate nav__icon"></i>Welcome</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i>Who I Am</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link"><i class="uil uil-file nav__icon"></i>Capabilities</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#achievements" class="nav__link"><i class="uil uil-award nav__icon"></i>Achievements</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#project" class="nav__link"><i class="uil uil-atom nav__icon"></i>Work Showcase</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link"><i class="uil uil-user-circle nav__icon"></i>Reach Out</a>
+                    </li>
+                </ul>
+                <i class="uil uil-multiply nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <div id="nav-toggle" class="nav__toggle">
+                    <i class="uil uil-apps nav__icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/bonam-jithendra-55bb16204/" class="home__social-icon" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+                        <a href="https://github.com/Jithu797" class="home__social-icon" target="_blank"><i class="uil uil-github-alt"></i></a>
+                        <a href="mailto:jithendrabonam797@gmail.com" class="home__social-icon" target="_blank"><i class="uil uil-envelope-alt"></i></a>
+                    </div>
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                <image class="home__blob-img" x="0" y="0" href="assets/img/perfil.png"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Hi, I am Jithendra
+                        </h1>
+                        <h3 class="home__subtitle">Full Stack Developer & AI Enthusiast</h3>
+                        <p class="home__description">Innovative Full Stack Developer with a passion for AI and cloud technologies. Specializing in creating intelligent, scalable web solutions using modern development frameworks.</p>
+                        <a href="#contact" class="button button--flex">Connect &nbsp;<i class="uil uil-message button__icon"></i></a>
+                    </div>
+                </div>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home_scroll-name">scroll</span>
+                        <i class="uil uil-angle-double-down  home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+    <h2 class="section__title">About Me</h2>
+    
+    <!-- Description Paragraph -->
+    <p class="about__description">
+        I am Jithendra, a 2024 B.Tech graduate from Vishnu Institute of Technology, specializing in software development. With expertise in Python and web technologies like HTML, CSS, and JavaScript, I am passionate about creating intuitive digital experiences. My hands-on projects, including web development and deep learning applications like NeuroVision, have strengthened my problem-solving skills. I am certified in AWS Cloud and Machine Learning Foundations and continuously explore new technologies such as Docker and Jenkins. Outside of coding, I enjoy photography, blogging, and volunteering, which inspire my innovative approach to projects.
+    </p>
+    
+    <!-- Buttons (Optional, for adding links like Resume or Portfolio) 
+    <div class="about__buttons">
+        <a href="#" class="button button--flex">
+            Download CV <i class="uil uil-download-alt button__icon"></i>
+        </a>
+    </div>
+</section>
+
+
+<!--==================== SKILLS ====================-->
+<section class="skills" id="skills">
+    <h2 class="skills__title section__title">Skills</h2>
+    <span class="skills__subtitle section__subtitle">Technical Proficiency</span>
+
+    <div class="skills__container container">
+        <!-- Skill Category: Frontend Development -->
+        <div class="skill__category">
+            <div class="skill__header">
+                <i class="uil uil-brackets-curly skill__icon"></i>
+                <h3 class="skill__category-title">Frontend Development</h3>
+                <i class="uil uil-angle-down skill__arrow"></i>
+            </div>
+            <div class="skill__items">
+                <div class="skill__item">
+                    <img src="assets/icons/html-5.png" alt="HTML" class="skill__icon">
+                    <span class="skill__name">HTML</span>
+                </div>
+                <div class="skill__item">
+                    <img src="assets/icons/css-3.png" alt="CSS" class="skill__icon">
+                    <span class="skill__name">CSS</span>
+                </div>
+                <div class="skill__item">
+                    <img src="assets/icons/js.png" alt="JavaScript" class="skill__icon">
+                    <span class="skill__name">JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skill Category: Backend Development -->
+        <div class="skill__category">
+            <div class="skill__header">
+                <i class="uil uil-server skill__icon"></i>
+                <h3 class="skill__category-title">Backend Development</h3>
+                <i class="uil uil-angle-down skill__arrow"></i>
+            </div>
+            <div class="skill__items">
+                <div class="skill__item">
+                    <img src="assets/icons/sql-server.png" alt="SQL" class="skill__icon">
+                    <span class="skill__name">SQL</span>
+                </div>
+                <div class="skill__item">
+                    <img src="assets/icons/python.png" alt="Python" class="skill__icon">
+                    <span class="skill__name">Python</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skill Category: Cloud & DevOps -->
+        <div class="skill__category">
+            <div class="skill__header">
+                <i class="uil uil-cloud skill__icon"></i>
+                <h3 class="skill__category-title">Cloud & DevOps</h3>
+                <i class="uil uil-angle-down skill__arrow"></i>
+            </div>
+            <div class="skill__items">
+                <div class="skill__item">
+                    <img src="assets/icons/aws.png" alt="AWS" class="skill__icon">
+                    <span class="skill__name">AWS</span>
+                </div>
+                <div class="skill__item">
+                    <img src="assets/icons/docker.png" alt="Docker" class="skill__icon">
+                    <span class="skill__name">Docker</span>
+                </div>
+                <div class="skill__item">
+                    <img src="assets/icons/jenkins.png" alt="Jenkins" class="skill__icon">
+                    <span class="skill__name">Jenkins</span>
+                </div>
+                <div class="skill__item">
+                    <img src="assets/icons/git.png" alt="Git" class="skill__icon">
+                    <span class="skill__name">Git</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skill Category: Data & AI Tools -->
+        <div class="skill__category">
+            <div class="skill__header">
+                <i class="uil uil-database skill__icon"></i>
+                <h3 class="skill__category-title">Data & AI Tools</h3>
+                <i class="uil uil-angle-down skill__arrow"></i>
+            </div>
+            <div class="skill__items">
+                <div class="skill__item">
+                    <img src="assets/icons/blockchain.png" alt="Blockchain" class="skill__icon">
+                    <span class="skill__name">Blockchain</span>
+                </div>
+                <div class="skill__item">
+                    <img src="assets/icons/bigml.png" alt="BigML" class="skill__icon">
+                    <span class="skill__name">BigML</span>
+                </div>
+                <div class="skill__item">
+                    <img src="assets/icons/powerbi.png" alt="Power BI" class="skill__icon">
+                    <span class="skill__name">Power BI</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section">
+            <h2 class="section__title">Qualification</h2>
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education :
+                    </div>
+                </div>
+
+                <div class="qualification__sections ">
+                    <div class="qualification__content">
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Bachelors of Technology</h3>
+                                <span class="qualification__subtitle">Vishnu Institute of Technology, Bhimavaram, Andhra Pradesh</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calender"></i>2020 - 2024
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Intermediate</h3>
+                                <span class="qualification__subtitle">Sasi Juniour College, Velivennu, Andhra Pradesh</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calender"></i>2018 - 2020
+                                </div>
+                            </div>
+                        </div>  
+
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">High School</h3>
+                                <span class="qualification__subtitle">Sasi E.M High School, Velivennu, Andhra Pradesh</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calender"></i>2017 - 2018
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== Achievement Services ====================-->
+        <section class="services section" id="achievements">
+            <h2 class="section__title">Achievements</h2>
+            <div class="services__container container grid">
+                <!-- Achievement 1 -->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-award services__icon"></i>
+                        <h3 class="services__title">Google Hackathon - 2nd Place</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button">
+                        viewMore  <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Google Hackathon</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Secured 2nd place in a 24-hour Google Hackathon, winning a prize of ₹5000.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-award services__icon"></i>
+                        <h3 class="services__title">Git & GitHub Certification</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button">
+                        viewMore  <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Git & GitHub</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Received a certificate for proficiency in Git and GitHub.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-award services__icon"></i>
+                        <h3 class="services__title">Lens Creators Program</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button">
+                        viewMore  <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Lens Creators Program</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Conceptualized and integrated a custom Snapchat lens for Flipkart's Lens Creators program.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+      <!--==================== PUBLICATIONS ====================-->
+<section class="publications section" id="publications">
+    <h2 class="section__title">Publications</h2>
+    <span class="section__subtitle">Academic Contributions</span>
+
+    <div class="publications__container container">
+        <div class="publications__content">
+            <h3 class="publications__title">Bokka, Revanth, Jithendra Venkata Sai Bonam, B. Meher Supriya, E. Pavan Kumar, and A. Bhaskar Chaitanya</h3>
+            <p class="publications__description">"Temporal Eye Data Analysis: Enhancing Ophthalmic Health Diagnostics with Recurrent Neural Networks."</p>
+        </div>
+
+        <div class="publications__content">
+            <h3 class="publications__title">Kakarla, Naga Venkata Rishi, Venkata Naga Rani Bandaru, Chandra Manasa Muddurthi, Lakshmi Kiranmai Nulu, and Jithendra Venkata Sai Bonam</h3>
+            <p class="publications__description">"Medizin: Revolutionizing Healthcare Management with Integrated Appointment Scheduling, Medication Tracking, and Real-Time Patient Engagement." <i>International Journal of Scientific Engineering and Science</i> 8, no. 1 (2024): 11-14.</p>
+        </div>
+
+        <div class="publications__content">
+            <h3 class="publications__title">Dedicated Researcher</h3>
+            <p class="publications__description">Extensive experience leading innovative projects in cloud computing, machine learning, blockchain, and IoT devices, contributing to scalability, security, and efficiency advancements across multiple domains.</p>
+        </div>
+    </div>
+</section>
+
+
+       <!--==================== PORTFOLIO ====================-->
+<section class="portfolio section" id="project">
+    <h2 class="section__title">My Projects</h2>
+    <span class="section__subtitle">Most recently worked Projects</span>
+
+    <div class="portfolio__container container swiper-contanier">
+        <div class="swiper-wrapper">
+            <!-- Project 1: Recipe Generator Using Gemini API -->
+            <div class="portfolio__content grid swiper-slide">
+                <div class="portfolio__img">
+                    <img src="assets/img/portfolio.png" alt="Recipe Generator Using Gemini API">
+                </div>
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">Recipe Generator Using Gemini API</h3>
+                    <p class="portfolio__description">Developed a recipe generator where users input a dish name (e.g., "Egg"). The system provides ingredients, up to three dish variations, and includes a YouTube video link for the recipe.</p>
+                    <a href="#" target="_blank" class="button button--flex button--small portfolio__button">
+                        Visit
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2: Class Schedule Optimization Using Genetic Algorithm -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/schedule.jpg" alt="Class Schedule Optimization" class="portfolio__img">
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">Class Schedule Optimization Using Genetic Algorithm</h3>
+                    <p class="portfolio__description">Created a system that generates optimal class schedules based on teacher availability using a genetic algorithm to minimize "free time" and maximize productive hours.</p>
+                    <a href="#" target="_blank" class="button button--flex button--small portfolio__button">
+                        Visit
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3: Eye Disease Detection Using Deep Learning -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/eye-detection.jpg" alt="Eye Disease Detection" class="portfolio__img">
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">Eye Disease Detection Using Deep Learning</h3>
+                    <p class="portfolio__description">Developed an advanced system using deep learning techniques to detect eye diseases using CNNs and RNNs, improving diagnostic accuracy.</p>
+                    <a href="#" target="_blank" class="button button--flex button--small portfolio__button">
+                        Visit
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 4: Distance Monitor Using Ultrasonic Sensor -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/distance-monitor.jpg" alt="Distance Monitor Using Ultrasonic Sensor" class="portfolio__img">
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">Distance Monitor Using Ultrasonic Sensor</h3>
+                    <p class="portfolio__description">Developed a real-time distance monitoring system using an ultrasonic sensor and Arduino microcontroller for safety purposes.</p>
+                    <a href="#" target="_blank" class="button button--flex button--small portfolio__button">
+                        Visit
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 5: Online Fitness Studio Web Application -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/fitness-studio.jpg" alt="Online Fitness Studio" class="portfolio__img">
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">Online Fitness Studio Web Application</h3>
+                    <p class="portfolio__description">Built a web application for an online fitness studio with user-friendly design and robust functionality for managing fitness sessions and classes.</p>
+                    <a href="#" target="_blank" class="button button--flex button--small portfolio__button">
+                        Visit
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-button-next"><i class="uil uil-angle-right-b swiper-portfolio-icon"></i></div>
+        <div class="swiper-button-prev"><i class="uil uil-angle-left-b swiper-portfolio-icon"></i></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+
+        <!--==================== HIRE ME====================-->
+        <section class="project section">
+            <div class="project__bg">
+                <div class="project__container conatiner grid">
+                    <div class="project__data">
+                        <h2 class="project__title">HIRE ME</h2>
+                        <p class="project__description">Interested in my works !!!</p>
+                        <a href="#contact" class="button button--flex button--white">
+                            Contact Me &nbsp;
+                            <i class="uil uil-message project__icon button__icon"></i>
+                        </a>
+                    </div>
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+                    <dotlottie-player class="project__img" src="https://lottie.host/9356ecb4-f0f5-421a-a3d6-d8452431eedf/xaNtDpU013.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact me</h2>
+            <span class="section__subtitle">Let us Talk !!!</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone-alt contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Phone : </h3>
+                            <span class="contact__subtitle">+91 8179728108</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope-alt contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Mail : </h3>
+                            <span class="contact__subtitle">jithendrabonam797@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-location-point contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Address :</h3>
+                            <span class="contact__subtitle">Reddy Street, Akividu,<br/> Andhra Pradesh, India.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" id="contact-form" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="name" class="contact__label">Name :</label>
+                            <input type="text" id="name" name="name" class="contact__input" required>
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="mail" class="contact__label">Email :</label>
+                            <input type="text" id="mail" name="mail" class="contact__input" required>
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="message" class="contact__label">Message :</label>
+                        <textarea id="message" cols="0" rows="7" name="message" class="contact__input" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" style="border: none;cursor: pointer;" id="email-btn" class="button button--flex">
+                            Send Message &nbsp;<i class="uil uil-message  button__icon"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Jithendra</h1>
+                    <span class="footer__subtitle">Full Stack Developer & AI Enthusiast </span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Home</a>
+                    </li>
+                    <li>    
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li>    
+                        <a href="#project" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact&nbsp;Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/bonam-jithendra-55bb16204/" target="_blank"><i class="uil uil-linkedin-alt footer__social"></i></a>
+                    <a href="https://github.com/Jithu797"  target="_blank"><i class="uil uil-github-alt footer__social"></i></a>
+                    <a href="mailto:jithendrabonam797@gmail.com" target="_blank"><i class="uil uil-envelope-alt footer__social"></i></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Made by Jithendra Bonam</p>
+        </div>
+    </footer>
+    
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-angle-double-up scrollup__icon"></i>
+    </a>
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+    emailjs.init("EzosNKoTRTMqbicSY");
+    document.getElementById('email-btn').addEventListener('click', function(event) {
+        event.preventDefault();
+        let name = document.querySelector("#name").value;
+        let mail = document.querySelector("#mail").value;
+        let message = document.querySelector("#message").value;
+
+        let namecheck = (name !== null ) && (name.length >=1)
+        let mailcheck = (mail !== null ) && (mail.length >=1) && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail);
+        let msgcheck = (message !== null ) && (message.length >=1)
+
+        let form = document.querySelector("#contact-form");
+        console.log(form);
+
+        if (namecheck && mailcheck && msgcheck) {
+            emailjs.sendForm('service_lzvrql6', 'template_iy9vpm3', form)
+            .then(function(response) {
+                alert('Email sent successfully!');
+                console.log('Success:', response);
+            }, function(error) {
+                alert('Failed to send email.');
+                console.log('Error:', error);
+            });
+        } else {
+            alert("please fill all the inputs correctly!!")
+        }
+    });
+    </script>
+
+</body>
+</html>

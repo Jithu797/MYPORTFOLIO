@@ -1,4 +1,3 @@
-
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
@@ -8,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 200; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -398,25 +397,7 @@ img {
   background-color: transparent;
   color: var(--first-color-alt);
 }
-
-.about__buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5vh; /* Full height of the viewport for centering */
-}
-.button--flex:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-}
-
-.button__icon {
-    margin-left: 5px; /* Adjust icon spacing within the button */
-}
-
 /*==================== ABOUT ====================*/
-/* General Styling for the About Section */
-
-
 .about__img
 {
   width: 200px;
@@ -434,7 +415,7 @@ img {
 .about__info
 {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-bottom: var(--mb-2-5);
 }
 .about__info-title
@@ -472,147 +453,127 @@ img {
     transform: translateY(-.25rem);
   }
 }
-
 /*==================== SKILLS ====================*/
 
-@keyframes skill {
-  0% {
+@keyframes skill 
+{
+  0%{
     transform: scale(0.7);
+    /* transform: translateX(-250px); */
   }
-  100% {
+  100%
+  {
     opacity: 1;
+    /* transform: scale(1),translateX(  0px); */
   }
 }
 
-/* Apply animation to each skill item in sequence */
-.skills__open .skill__item:nth-child(1) {
+.skills__open .skill:nth-child(1)
+{
   opacity: 0;
-  animation: skill 0.5s linear forwards;
+  animation: skill 0.5s  linear  forwards;
 }
-.skills__open .skill__item:nth-child(2) {
-  opacity: 0;
-  animation: skill 0.5s linear 0.5s forwards;
+.skills__open .skill:nth-child(2)
+{
+  opacity: 0; 
+  animation: skill 0.5s  linear 0.5s forwards;
 }
-.skills__open .skill__item:nth-child(3) {
-  opacity: 0;
-  animation: skill 0.5s linear 1s forwards;
+.skills__open .skill:nth-child(3)
+{
+  opacity: 0; 
+  animation: skill 0.5s  linear 1s forwards;
 }
-.skills__open .skill__item:nth-child(4) {
-  opacity: 0;
-  animation: skill 0.5s linear 1.5s forwards;
+.skills__open .skill:nth-child(4)
+{
+  opacity: 0; 
+  animation: skill 0.5s  linear 1.5s forwards;
 }
-.skills__open .skill__item:nth-child(5) {
-  opacity: 0;
-  animation: skill 0.5s linear 2s forwards;
+.skills__open .skill:nth-child(5)
+{
+  opacity: 0; 
+  animation: skill 0.5s  linear 2s forwards;
 }
 
-/*==================== CONTAINER STYLING ====================*/
-/* Center the skills section */
-.skills__container {
-  display: flex;
-  justify-content: center;  /* Center horizontally */
-  align-items: center;  /* Align items to the center */
-  flex-wrap: wrap;  /* Allows wrapping in case of multiple rows */
-  gap: 2rem; /* Add some spacing between rows */
-  padding: 2rem 0; /* Optional padding to add some space at the top/bottom */
-  width: 100%;  /* Ensure the container takes up full width */
-  max-width: 1200px; /* Limit the width of the container to center better */
-  margin: 0 auto;  /* Center the container within the page */
-}
 
-/* Skill category section styling */
-.skill__category {
-  width: 100%;  /* Take full width available */
-  max-width: 900px; /* Set a max width for the content */
-  margin-bottom: 2rem; /* Add spacing between skill categories */
-  margin-left: auto;  /* Center horizontally */
-  margin-right: auto; /* Center horizontally */
+.skills__container
+{
+  row-gap: 0;
 }
-
-/*==================== FLEXBOX FOR SKILL ITEMS ====================*/
-/* Flexbox to center the skill items within each category */
-.skill__items {
-  display: flex;
-  justify-content: center;  /* Center skill items */
-  flex-wrap: wrap;
-  gap: 1.5rem;  /* Add spacing between skill items */
+.skills__list_flex .frontend
+{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+  flex-shrink: 2rem;
+  /* justify-content: space-between; */
+  flex-wrap:wrap;
+  /* align-items: space-evenly; */
+  /* padding-inline: 3.5rem; */
 }
-
-/* Individual skill item styling */
-.skill__item {
+.skills__list_flex .skill
+{
   width: 4rem;
-  margin: 1rem;
+  /* border: 2px solid black; */
+  margin-inline: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
-
-/*==================== HEADER AND TITLE STYLING ====================*/
-/* Skill section header */
-.skill__header {
+.skills__header
+{
   display: flex;
   align-items: center;
   cursor: pointer;
   margin-bottom: var(--mb-2-5);
 }
-
-/* Skill icon and arrow styling */
-.skill__icon, .skill__arrow {
+.skills__icon,.skills__arrow
+{
   font-size: 2rem;
   color: var(--first-color);
 }
-
-.skill__icon {
+.skills__icon
+{
   margin-right: var(--mb-0-75);
 }
-
-/* Skill category title */
-.skill__category-title {
+.skills__title
+{
   font-size: var(--h3-font-size);
 }
-
-.skills__subtitle {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
+.skills__subtitle
+{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
 }
-
-/*==================== ARROW AND TOGGLE ANIMATION ====================*/
-/* Arrow styling for collapsing and expanding */
-.skill__arrow {
+.skills__arrow
+{
   margin-left: auto;
   transition: .4s;
 }
-
-.skills__open .skill__arrow {
-  transform: rotate(0deg);
+.skills__titles
+{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
 }
-
-.skills__close .skill__arrow {
-  transform: rotate(-90deg);
-}
-
-/*==================== TOGGLE SKILLS ====================*/
-/* Close state for skill items */
-.skills__close .skill__items {
-  height: 0;
-  overflow: hidden;
-}
-
-/* Open state for skill items */
-.skills__open .skill__items {
-  height: max-content;
-  margin-bottom: var(--mb-2);
-}
-
-/*==================== INDIVIDUAL SKILL NAME STYLING ====================*/
-/* Skill name styling */
-.skill__name {
+.skills__name
+{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
 }
-
-
+.skills__close .skills__list
+{
+  height: 0;
+  overflow: hidden;
+}
+.skills__open .skills__list
+{
+    height: max-content;
+    margin-bottom: var(--mb-2);
+}
+.skills__close .skills__arrow
+{
+  transform: rotate(-90deg);
+}
 
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs
@@ -1305,6 +1266,8 @@ img {
 
 
 }
+
+
 
 
 /* For large devices */

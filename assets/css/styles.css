@@ -416,8 +416,6 @@ img {
 /*==================== ABOUT ====================*/
 /* General Styling for the About Section */
 
-/*==================== ABOUT ====================*/
-
 /* Ensure the parent section (about) fills the available space */
 .about {
   display: flex;
@@ -426,6 +424,15 @@ img {
   align-items: center; /* Center content horizontally */
   min-height: 100vh; /* Ensures the section fills the full viewport height */
   padding: 2rem;
+}
+/* About Description Centered with Justified Text */
+.about__description {
+  max-width: 800px; /* Restrict the width of the description */
+  margin: 0 auto;  /* Center the description */
+  text-align: justify;  /* Justify the text alignment */
+  padding: 1rem;
+  line-height: 1.6;  /* Improve readability */
+  font-size: var(--normal-font-size);  /* Ensure font-size consistency */
 }
 
 /* Center the button horizontally */

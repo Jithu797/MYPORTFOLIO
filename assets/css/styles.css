@@ -403,20 +403,20 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh; /* Full height of the viewport for centering */
+    height: 5vh; /* Full height of the viewport for centering */
 }
 .button--flex:hover {
     background-color: #0056b3; /* Darker shade on hover */
 }
 
 .button__icon {
-    margin-left: 10px; /* Adjust icon spacing within the button */
+    margin-left: 5px; /* Adjust icon spacing within the button */
 }
 
 /*==================== ABOUT ====================*/
 /* General Styling for the About Section */
 
-/*==================== ABOUT ====================*/
+
 .about__img
 {
   width: 200px;
@@ -434,7 +434,7 @@ img {
 .about__info
 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-bottom: var(--mb-2-5);
 }
 .about__info-title

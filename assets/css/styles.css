@@ -416,67 +416,24 @@ img {
 /*==================== ABOUT ====================*/
 /* General Styling for the About Section */
 
-.about__img
-{
-  width: 200px;
-  border-radius: .5rem;
-  border: none;
-  justify-self: center;
-  align-self: center;
-}
-
-/* About Description Centered with Justified Text */
-.about__description {
-  max-width: 800px; /* Restrict the width of the description */
-  margin: 0 auto;  /* Center the description */
-  text-align: justify;  /* Justify the text alignment */
-  padding: 1rem;
-  line-height: 1.6;  /* Improve readability */
-  font-size: var(--normal-font-size);  /* Ensure font-size consistency */
-}
-
-/* Info Section Centered and Aligned Side by Side */
-.about__info {
-  display: flex;
-  justify-content: center;  /* Center the info items */
-  gap: 2rem;  /* Add space between the info items */
-  margin-bottom: var(--mb-2-5);
-  flex-wrap: wrap;  /* Allow wrapping if the screen is too small */
-}
-
-.about__info div {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center the content vertically */
-}
-
-/* Info Title Styling */
-.about__info-title {
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-semi-bold);
-  color: var(--first-color);
-}
-
-.about__info-name {
-  font-size: var(--smaller-font-size);
-  color: var(--text-color);
-}
+/*==================== ABOUT ====================*/
 
 /* Ensure the parent section (about) fills the available space */
 .about {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Push the button to the bottom */
+  justify-content: center; /* Center content (like button and text) vertically */
+  align-items: center; /* Center content horizontally */
   min-height: 100vh; /* Ensures the section fills the full viewport height */
   padding: 2rem;
 }
 
-/* Center the button horizontally and place it at the bottom */
+/* Center the button horizontally */
 .about__buttons {
   display: flex;
-  justify-content: center;  /* Center the button */
+  justify-content: center;  /* Center the button horizontally */
   align-items: center;  /* Align items vertically */
-  margin-top: auto;  /* Push the button to the bottom of the section */
+  margin-top: 2rem;  /* Optional spacing if you want to add distance from the text */
 }
 
 /* Button Styling */
@@ -519,9 +476,13 @@ img {
 @media screen and (max-width: 768px) {
   .about {
     min-height: auto; /* Allow section to shrink on smaller screens */
+    padding: 1rem;
+  }
+
+  .about__buttons {
+    margin-top: 1rem; /* Reduce margin on smaller screens */
   }
 }
-
 /*==================== SKILLS ====================*/
 
 @keyframes skill {

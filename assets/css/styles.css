@@ -416,9 +416,13 @@ img {
 /*==================== ABOUT ====================*/
 /* General Styling for the About Section */
 
-.about {
-  padding: 2rem 0;
-  text-align: center;
+.about__img
+{
+  width: 200px;
+  border-radius: .5rem;
+  border: none;
+  justify-self: center;
+  align-self: center;
 }
 
 /* About Description Centered with Justified Text */
@@ -435,7 +439,7 @@ img {
 .about__info {
   display: flex;
   justify-content: center;  /* Center the info items */
-  gap: 0rem;  /* Add space between the info items */
+  gap: 2rem;  /* Add space between the info items */
   margin-bottom: var(--mb-2-5);
   flex-wrap: wrap;  /* Allow wrapping if the screen is too small */
 }

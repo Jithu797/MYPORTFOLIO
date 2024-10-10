@@ -416,105 +416,60 @@ img {
 /*==================== ABOUT ====================*/
 /* General Styling for the About Section */
 
-.about {
-  padding: 2rem 0;
+/*==================== ABOUT ====================*/
+.about__img
+{
+  width: 200px;
+  border-radius: .5rem;
+  border: none;
+  justify-self: center;
+  align-self: center;
+}
+.about__description
+{
   text-align: center;
-}
-
-/* About Description Centered with Justified Text */
-.about__description {
-  max-width: 800px; /* Restrict the width of the description */
-  margin: 0 auto;  /* Center the description */
-  text-align: justify;  /* Justify the text alignment */
-  padding: 1rem;
-  line-height: 1.6;  /* Improve readability */
-  font-size: var(--normal-font-size);  /* Ensure font-size consistency */
-}
-
-/* Info Section Centered and Aligned Side by Side */
-.about__info {
-  display: flex;
-  justify-content: center;  /* Center the info items */
-  gap: 2rem;  /* Add space between the info items */
   margin-bottom: var(--mb-2-5);
-  flex-wrap: wrap;  /* Allow wrapping if the screen is too small */
+  padding: 1rem;
 }
-
-.about__info div {
+.about__info
+{
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Center the content vertically */
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
 }
-
-/* Info Title Styling */
-.about__info-title {
+.about__info-title
+{
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
-  color: var(--first-color);
 }
-
-.about__info-name {
+.about__info-name
+{
   font-size: var(--smaller-font-size);
-  color: var(--text-color);
 }
-
-/* Ensure the parent section (about) fills the available space */
-.about {
+.about__info-title,.about__info-name
+{
+  display: block;
+  text-align: center;
+}
+.about__buttons
+{
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Push the button to the bottom */
-  min-height: 100vh; /* Ensures the section fills the full viewport height */
-  padding: 2rem;
+  justify-content: center;
 }
-
-/* Center the button horizontally and place it at the bottom */
-.about__buttons {
-  display: flex;
-  justify-content: center;  /* Center the button */
-  align-items: center;  /* Align items vertically */
-  margin-top: auto;  /* Push the button to the bottom of the section */
-}
-
-/* Button Styling */
-.about__buttons .button--flex {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: var(--first-color);
-  color: #fff;
-  padding: 0.75rem 2rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  justify-content: center;  /* Ensure content within the button is centered */
-  text-align: center;  /* Center text in the button */
-}
-
-/* Button Hover Effect */
-.about__buttons .button--flex:hover {
-  background-color: var(--first-color-alt);
-}
-
-/* Button Icon Hover Animation */
-.about__buttons:hover .button__icon {
+.about__buttons:hover .button__icon 
+{
   transform: translateX(0);
   animation: updown 1.5s linear infinite;
 }
-
-/* Animation for button hover */
-@keyframes updown {
-  0%, 100% {
+@keyframes updown 
+{
+  0%,100%
+  {
     transform: translateY(0rem);
   }  
-  50% {
+  50%
+  {
     transform: translateY(-.25rem);
-  }
-}
-
-/* Responsive Adjustments */
-@media screen and (max-width: 768px) {
-  .about {
-    min-height: auto; /* Allow section to shrink on smaller screens */
   }
 }
 

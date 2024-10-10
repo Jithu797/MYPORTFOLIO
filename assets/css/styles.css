@@ -403,10 +403,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* This ensures the button is vertically centered in the viewport */
+    height: 10vh; /* This ensures the button is vertically centered in the viewport */
 }
 .button__icon {
-    margin-left: 10px;
+    margin-left: 100px;
 }
 
 /*==================== ABOUT ====================*/

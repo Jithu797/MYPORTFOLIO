@@ -406,7 +406,7 @@ img {
     height: 10vh; /* Full height of the viewport for centering */
 }
 .button--flex:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color:#0056b3; /* Darker shade on hover */
 }
 
 .button__icon {
@@ -435,7 +435,7 @@ img {
 .about__info {
   display: flex;
   justify-content: center;  /* Center the info items */
-  gap: 2rem;  /* Add space between the info items */
+  gap: 0rem;  /* Add space between the info items */
   margin-bottom: var(--mb-2-5);
   flex-wrap: wrap;  /* Allow wrapping if the screen is too small */
 }
@@ -462,7 +462,7 @@ img {
 .about {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Push the button to the bottom */
+  justify-content: center; /* Push the button to the bottom */
   min-height: 100vh; /* Ensures the section fills the full viewport height */
   padding: 2rem;
 }

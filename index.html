@@ -574,30 +574,31 @@
     </footer>
     
     <!--==================== SCROLL TOP ====================-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-angle-double-up scrollup__icon"></i>
-    </a>
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-angle-double-up scrollup__icon"></i>
+</a>
 
-    <script src="./assets/js/swiper-bundle.min.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-    emailjs.init("EzosNKoTRTMqbicSY");
+<script src="./assets/js/swiper-bundle.min.js"></script>
+<script src="./assets/js/main.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    emailjs.init("EzosNKoTRTMqbicSY"); // Your public key or user ID here
     document.getElementById('email-btn').addEventListener('click', function(event) {
         event.preventDefault();
         let name = document.querySelector("#name").value;
         let mail = document.querySelector("#mail").value;
         let message = document.querySelector("#message").value;
 
-        let namecheck = (name !== null ) && (name.length >=1)
-        let mailcheck = (mail !== null ) && (mail.length >=1) && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail);
-        let msgcheck = (message !== null ) && (message.length >=1)
+        // Input validation
+        let namecheck = (name !== null) && (name.length >= 1);
+        let mailcheck = (mail !== null) && (mail.length >= 1) && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail);
+        let msgcheck = (message !== null) && (message.length >= 1);
 
         let form = document.querySelector("#contact-form");
-        console.log(form);
 
         if (namecheck && mailcheck && msgcheck) {
-            emailjs.sendForm('service_lzvrql6', 'template_iy9vpm3', form)
+            // Use your EmailJS service ID and template ID
+            emailjs.sendForm('service_syzyr8q', 'template_iy9vpm3', form)
             .then(function(response) {
                 alert('Email sent successfully!');
                 console.log('Success:', response);
@@ -606,10 +607,8 @@
                 console.log('Error:', error);
             });
         } else {
-            alert("please fill all the inputs correctly!!")
+            alert("Please fill all the inputs correctly!!");
         }
     });
-    </script>
+</script>
 
-</body>
-</html>

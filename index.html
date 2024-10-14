@@ -578,26 +578,42 @@
     <i class="uil uil-angle-double-up scrollup__icon"></i>
 </a>
 
+<!-- Form for collecting user input -->
+<form id="contact-form">
+    <input type="text" id="name" name="user_name" placeholder="Your Name" required>
+    <input type="email" id="mail" name="user_email" placeholder="Your Email" required>
+    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" id="email-btn">Send Email</button>
+</form>
+
+<!-- Include external JS libraries -->
 <script src="./assets/js/swiper-bundle.min.js"></script>
 <script src="./assets/js/main.js"></script>
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 <script>
-    emailjs.init("EzosNKoTRTMqbicSY"); // Your public key or user ID here
+    // Initialize EmailJS with your public key
+    emailjs.init("WuCYQayeFSQtQPG4m"); // Public Key
+
+    // Add event listener to handle form submission
     document.getElementById('email-btn').addEventListener('click', function(event) {
-        event.preventDefault();
+        event.preventDefault(); // Prevent default form submission
+
+        // Validate form fields
         let name = document.querySelector("#name").value;
         let mail = document.querySelector("#mail").value;
         let message = document.querySelector("#message").value;
 
-        // Input validation
-        let namecheck = (name !== null) && (name.length >= 1);
-        let mailcheck = (mail !== null) && (mail.length >= 1) && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail);
-        let msgcheck = (message !== null) && (message.length >= 1);
+        // Basic validation checks
+        let namecheck = (name !== null && name.length >= 1);
+        let mailcheck = (mail !== null && mail.length >= 1 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail));
+        let msgcheck = (message !== null && message.length >= 1);
 
+        // Get form element
         let form = document.querySelector("#contact-form");
 
         if (namecheck && mailcheck && msgcheck) {
-            // Use your EmailJS service ID and template ID
+            // Send form data using EmailJS
             emailjs.sendForm('service_syzyr8q', 'template_iy9vpm3', form)
             .then(function(response) {
                 alert('Email sent successfully!');
@@ -607,8 +623,7 @@
                 console.log('Error:', error);
             });
         } else {
-            alert("Please fill all the inputs correctly!!");
+            alert("Please fill in all fields correctly.");
         }
     });
 </script>
-
